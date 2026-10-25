@@ -3,44 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal tools, automations, and experiments by Rakesh Krishnan.">
   <title>Projects · Rakesh Krishnan</title>
+  <meta name="description" content="Personal tools, automations and experiments by Rakesh Krishnan, including Little Voices, a picture and sound web app for early readers.">
+  <link rel="canonical" href="https://rakeshkrishnan.com/projects/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects · Rakesh Krishnan">
+  <meta property="og:description" content="Personal tools, automations and experiments.">
+  <meta property="og:url" content="https://rakeshkrishnan.com/projects/">
+  <meta property="og:image" content="https://rakeshkrishnan.com/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/theme.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="wrap">
+      <a href="../">Rakesh Krishnan</a>
+      <a href="../concepts/">Concepts</a>
+      <a href="./" aria-current="page">Projects</a>
+    </div>
+  </nav>
+
   <header class="site-header" id="top">
     <div class="page">
       <h1>Projects</h1>
-      <p>Personal tools, automations, and experiments.</p>
+      <p>Personal tools, automations and experiments.</p>
     </div>
-    <nav class="site-nav" aria-label="Site navigation">
-      <div class="wrap">
-        <a href="../" class="home">Rakesh Krishnan</a>
-        <a href="../concepts/">Concepts &amp; Diagrams</a>
-        <a href="./" aria-current="page">Projects</a>
-      </div>
-    </nav>
   </header>
 
-  <main class="page">
+  <main class="page" id="main">
     <article class="concept" id="little-voices">
       <header class="concept-title">
         <p class="category">Web app · Kids</p>
         <h2>Little Voices</h2>
-        <p>Tap a picture and hear its name, spoken by an ElevenLabs voice. A no-build static web app using the Web Audio API.</p>
+        <p>Tap a picture and hear its name, spoken by an ElevenLabs voice. A static web app with no build step, using the Web Audio API.</p>
       </header>
 
       <section>
-        <img src="../assets/images/little-voices.png" alt="Little Voices app: typing the letter g shows a gift and a ghost picture to tap and hear" style="max-width:100%;height:auto;border-radius:12px">
-        <p><a href="https://github.com/GH-user-001/Little-Voices">View source</a></p>
+        <img class="shot" src="../assets/images/little-voices.png" width="1080" height="1200" loading="lazy" alt="Little Voices app: typing the letter g shows a gift and a ghost picture to tap and hear">
+      </section>
+
+      <section>
+        <p class="link-row"><a href="https://github.com/GH-user-001/Little-Voices">Read the Little Voices source on GitHub</a></p>
       </section>
     </article>
   </main>
 
   <footer>
     <div class="page">
-      <p><a href="../">← Rakesh Krishnan</a></p>
+      <p><a href="../">← Back to Rakesh Krishnan</a></p>
     </div>
   </footer>
 </body>

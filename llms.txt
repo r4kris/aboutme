@@ -21,6 +21,8 @@ Core skills: GitHub Enterprise (EMU), GitHub Actions, GitHub Advanced Security, 
 - [Projects](https://rakeshkrishnan.com/projects/): Personal tools, automations and experiments.
 - [Concepts & Diagrams](https://rakeshkrishnan.com/concepts/): Plain-language explanations with editable draw.io diagrams.
 - [AWS Cheatsheet](https://rakeshkrishnan.com/concepts/aws/): One-page visual reference to the essential AWS services, grouped by job.
+- [What is OOP?](https://rakeshkrishnan.com/concepts/what-is-oop/): Object oriented programming explained with toy robots.
+- [HTTP request lifecycle](https://rakeshkrishnan.com/concepts/http-request-lifecycle/): How a browser turns a URL into a rendered page.
 - [GitHub](https://github.com/GH-user-001): Source code, including this site.
 
 ## Optional

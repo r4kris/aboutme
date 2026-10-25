@@ -3,39 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A growing collection of simple explanations and editable diagrams.">
-  <title>Concepts &amp; Diagrams · Rakesh Krishnan</title>
+  <title>Concepts and diagrams · Rakesh Krishnan</title>
+  <meta name="description" content="Plain explanations and editable diagrams: an AWS cheatsheet, what object oriented programming is, and how an HTTP request travels from browser to page.">
+  <link rel="canonical" href="https://rakeshkrishnan.com/concepts/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Concepts and diagrams · Rakesh Krishnan">
+  <meta property="og:description" content="Plain explanations and editable diagrams for things I've learned.">
+  <meta property="og:url" content="https://rakeshkrishnan.com/concepts/">
+  <meta property="og:image" content="https://rakeshkrishnan.com/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/theme.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="wrap">
+      <a href="../">Rakesh Krishnan</a>
+      <a href="./" aria-current="page">Concepts</a>
+      <a href="../projects/">Projects</a>
+    </div>
+  </nav>
+
   <header class="site-header" id="top">
     <div class="page">
-      <h1>Concepts &amp; Diagrams</h1>
-      <p>Simple explanations and editable diagrams for things I've learned.</p>
+      <h1>Concepts and diagrams</h1>
+      <p>Plain explanations and editable diagrams for things I've learned.</p>
     </div>
-    <nav class="site-nav" aria-label="Site navigation">
-      <div class="wrap">
-        <a href="../" class="home">Rakesh Krishnan</a>
-        <a href="./" aria-current="page">Concepts &amp; Diagrams</a>
-        <a href="../projects/">Projects</a>
-      </div>
-    </nav>
   </header>
 
-  <main class="page">
-    <article class="concept" id="aws">
-      <header class="concept-title">
-        <p class="category">Cloud</p>
-        <h2><a href="aws/">AWS Cheatsheet</a></h2>
+  <main class="page" id="main">
+    <article class="entry">
+      <p class="category">Cloud</p>
+      <div>
+        <h2><a href="aws/">AWS cheatsheet</a></h2>
         <p>The essential Amazon Web Services grouped by job: build, connect, secure, operate and optimize.</p>
-      </header>
+      </div>
+    </article>
+
+    <article class="entry">
+      <p class="category">Programming</p>
+      <div>
+        <h2><a href="what-is-oop/">What is OOP?</a></h2>
+        <p>Object oriented programming explained with toy robots, as a short picture book.</p>
+      </div>
+    </article>
+
+    <article class="entry">
+      <p class="category">Web fundamentals</p>
+      <div>
+        <h2><a href="http-request-lifecycle/">HTTP request lifecycle</a></h2>
+        <p>How a browser turns a URL into a rendered page: name resolution, connection, request and response, rendering.</p>
+      </div>
     </article>
   </main>
 
   <footer>
     <div class="page">
-      <p><a href="../">← Rakesh Krishnan</a></p>
+      <p><a href="../">← Back to Rakesh Krishnan</a></p>
     </div>
   </footer>
 </body>

@@ -1,6 +1,9 @@
 (function () {
-  var THEMES = [["light", "Light"], ["dark", "Dark"], ["neon", "Cyberphunk Neon"]];
+  var THEMES = [["system", "System"], ["light", "Light"], ["dark", "Dark"], ["neon", "Cyberphunk Neon"]];
   var root = document.documentElement;
+  var dark = window.matchMedia("(prefers-color-scheme: dark)");
+
+  root.classList.add("js");
 
   function saved() {
     try { return localStorage.getItem("theme"); } catch (e) { return null; }
@@ -15,35 +18,81 @@
     document.head.appendChild(link);
   }
 
-  function apply(theme) {
-    if (theme === "neon") loadNeonFonts();
-    root.setAttribute("data-theme", theme);
-    try { localStorage.setItem("theme", theme); } catch (e) {}
-    var buttons = document.querySelectorAll(".theme-switch button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute("aria-pressed", String(buttons[i].dataset.theme === theme));
-    }
+  function resolve(choice) {
+    if (choice === "system") return dark.matches ? "dark" : "light";
+    return choice;
   }
 
-  var current = saved();
-  if (!THEMES.some(function (t) { return t[0] === current; })) current = "light";
-  if (current === "neon") loadNeonFonts();
-  root.setAttribute("data-theme", current);
+  function paint(choice) {
+    var theme = resolve(choice);
+    if (theme === "neon") loadNeonFonts();
+    root.setAttribute("data-theme", theme);
+  }
+
+  var choice = saved();
+  if (!THEMES.some(function (t) { return t[0] === choice; })) choice = "system";
+  paint(choice);
+
+  // follow the OS while the visitor has not picked a theme
+  dark.addEventListener("change", function () {
+    if (choice === "system") paint(choice);
+  });
+
+  function buildSwitch() {
+    var label = document.createElement("label");
+    label.className = "theme-switch";
+    var text = document.createElement("span");
+    text.className = "visually-hidden";
+    text.textContent = "Colour theme";
+    var select = document.createElement("select");
+    THEMES.forEach(function (t) {
+      var option = document.createElement("option");
+      option.value = t[0];
+      option.textContent = t[1];
+      select.appendChild(option);
+    });
+    select.value = choice;
+    select.addEventListener("change", function () {
+      choice = select.value;
+      try { localStorage.setItem("theme", choice); } catch (e) {}
+      paint(choice);
+    });
+    label.appendChild(text);
+    label.appendChild(select);
+    document.body.appendChild(label);
+  }
+
+  function initReveal() {
+    var targets = document.querySelectorAll(
+      ".concept-title, .concept > section, .entry, .card, .prose > *, .meta, .site-header > .page, .concept-header > .wrap"
+    );
+    if (!("IntersectionObserver" in window)) return;
+    var seen = new Map();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        io.unobserve(el);
+        var parent = el.parentElement;
+        var n = seen.get(parent) || 0;
+        seen.set(parent, n + 1);
+        el.style.transitionDelay = Math.min(n, 5) * 80 + "ms";
+        el.classList.add("is-in");
+        // hand the element back to its own hover and press transitions
+        setTimeout(function () {
+          el.classList.remove("reveal", "is-in");
+          el.style.transitionDelay = "";
+        }, 1000 + Math.min(n, 5) * 80 + 100);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    targets.forEach(function (el) {
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var group = document.createElement("div");
-    group.className = "theme-switch";
-    group.setAttribute("role", "group");
-    group.setAttribute("aria-label", "Colour theme");
-    THEMES.forEach(function (t) {
-      var b = document.createElement("button");
-      b.type = "button";
-      b.dataset.theme = t[0];
-      b.textContent = t[1];
-      b.addEventListener("click", function () { apply(t[0]); });
-      group.appendChild(b);
-    });
-    document.body.appendChild(group);
-    apply(root.getAttribute("data-theme"));
+    buildSwitch();
+    initReveal();
   });
 })();

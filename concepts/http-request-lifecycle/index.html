@@ -4,20 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A visual overview of what happens after entering a URL in a browser.">
-  <title>HTTP Request Lifecycle · Concepts & Diagrams</title>
+  <title>HTTP request lifecycle · Concepts and diagrams</title>
+  <link rel="canonical" href="https://rakeshkrishnan.com/concepts/http-request-lifecycle/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HTTP request lifecycle">
+  <meta property="og:description" content="A visual overview of what happens after entering a URL in a browser.">
+  <meta property="og:url" content="https://rakeshkrishnan.com/concepts/http-request-lifecycle/">
+  <meta property="og:image" content="https://rakeshkrishnan.com/assets/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/theme.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="wrap">
+      <a href="../../">Rakesh Krishnan</a>
+      <a href="../" aria-current="page">Concepts</a>
+      <a href="../../projects/">Projects</a>
+    </div>
+  </nav>
+
   <header class="concept-header">
     <div class="wrap">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Concepts &amp; Diagrams</a> / Web fundamentals</nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Concepts and diagrams</a> / Web fundamentals</nav>
       <p class="eyebrow">Web fundamentals</p>
-      <h1>HTTP Request Lifecycle</h1>
+      <h1>HTTP request lifecycle</h1>
       <p class="lede">A browser turns a URL into a rendered page through name resolution, connection setup, a request–response exchange, and rendering.</p>
     </div>
   </header>
 
-  <main class="wrap concept-layout">
+  <main class="wrap concept-layout" id="main">
     <article class="prose">
       <h2>Mental model</h2>
       <p>Think of the browser as a client sending a precisely addressed order. DNS finds the destination, the network establishes a route, the server prepares a response, and the browser assembles the result.</p>
@@ -43,7 +65,7 @@
 
       <div class="callout"><strong>Key distinction:</strong> HTTP describes the messages; DNS, TCP or QUIC, and TLS provide supporting layers.</div>
 
-      <h2>Trade-offs and common mistakes</h2>
+      <h2>Trade offs and common mistakes</h2>
       <ul>
         <li>Caching reduces latency and server work, but stale content needs an invalidation strategy.</li>
         <li>A page usually makes many HTTP requests—not just the first document request.</li>

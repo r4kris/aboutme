@@ -132,7 +132,7 @@ safe-outputs:
             git commit -m "Update wiki pages [agentic-wiki]"
             git push
 timeout-minutes: 30
-engine: claude
+engine: gemini
 
 source: githubnext/agentics/workflows/agentic-wiki-writer.md@139fa09ef17cde4135e696ff8e7af09bc5ddfa6e
 ---

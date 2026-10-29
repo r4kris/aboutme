@@ -1,0 +1,817 @@
+{
+  "cli_version": "v1.0.1",
+  "run_id": 40807162283,
+  "processed_at": "2026-10-28T19:38:25.602668-07:00",
+  "run": {
+    "databaseId": 40807162283,
+    "number": 1,
+    "url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283",
+    "status": "completed",
+    "conclusion": "failure",
+    "workflowName": "Agentic Wiki Writer",
+    "workflowPath": ".github/workflows/agentic-wiki-writer.lock.yml",
+    "createdAt": "2026-10-29T02:34:32Z",
+    "startedAt": "2026-10-29T02:46:12Z",
+    "updatedAt": "2026-10-29T02:50:10Z",
+    "event": "workflow_dispatch",
+    "headBranch": "add-wiki-writer",
+    "headSha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+    "displayTitle": "Agentic Wiki Writer",
+    "attempt": 2,
+    "repository": "GH-user-001/GH-user-001",
+    "actor": "GH-user-001",
+    "Duration": 45000000000,
+    "ActionMinutes": 1,
+    "TokenUsage": 0,
+    "Turns": 0,
+    "TurnsAvailable": true,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": ".github/aw/logs/run-40807162283",
+    "DownloadDuration": 3381945833,
+    "DownloadSizeBytes": 56844
+  },
+  "metrics": {
+    "TokenUsage": 0,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "access_analysis": null,
+  "firewall_analysis": null,
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "working_set": {
+    "measurement_state": "unavailable",
+    "cumulative_input_tokens": 0,
+    "peak_input_tokens": 0,
+    "rebuild_excess_tokens": 0,
+    "invocations": 0
+  },
+  "friction": {
+    "measurement_state": "unavailable",
+    "canonical_unit": "aic",
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "dimension_states": {
+      "aic": "unavailable",
+      "latency_ms": "unavailable",
+      "tokens": "unavailable",
+      "tool_calls": "unavailable",
+      "turns": "unavailable"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)"
+      },
+      "latency_ms": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "basis": "wall-clock duration recorded on the failing tool call or invocation"
+      },
+      "tokens": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "basis": "token classes of the attributed invocations"
+      },
+      "tool_calls": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "basis": "counted friction occurrences that consumed a tool call"
+      },
+      "turns": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "basis": "one additional turn per errored or retried model invocation"
+      }
+    },
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "source_unavailable:agent_token_usage"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "source_unavailable:firewall"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "source_unavailable:mcp_gateway"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "source_unavailable:mcp_gateway"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 8,
+    "core_consumed": 19,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4976,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 4,
+        "quota_consumed": 19,
+        "final_remaining": 4976,
+        "limit": 5000
+      },
+      {
+        "resource": "search",
+        "requests_made": 4,
+        "quota_consumed": 0,
+        "final_remaining": 29,
+        "limit": 30
+      },
+      {
+        "resource": "copilot_usage_records",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "source_import",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "graphql",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "actions_runner_registration",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10000,
+        "limit": 10000
+      },
+      {
+        "resource": "integration_manifest",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "scim",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15000,
+        "limit": 15000
+      },
+      {
+        "resource": "dependency_snapshots",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "enterprise_token_inventory",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "dependency_sbom",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "code_scanning_autofix",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "audit_log",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "audit_log_streaming",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15,
+        "limit": 15
+      },
+      {
+        "resource": "code_search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      }
+    ]
+  },
+  "job_details": [
+    {
+      "id": 123228752595,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQGK0w",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228752595",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228752595",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-29T02:34:33Z",
+      "started_at": "2026-10-29T02:34:36Z",
+      "completed_at": "2026-10-29T02:34:52Z",
+      "name": "activation",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-29T02:34:37Z",
+          "completed_at": "2026-10-29T02:34:42Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-29T02:34:42Z",
+          "completed_at": "2026-10-29T02:34:46Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-29T02:34:46Z",
+          "completed_at": "2026-10-29T02:34:46Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-29T02:34:46Z",
+          "completed_at": "2026-10-29T02:34:46Z"
+        },
+        {
+          "name": "Restore daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-29T02:34:46Z",
+          "completed_at": "2026-10-29T02:34:46Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-29T02:34:46Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Publish daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Validate ANTHROPIC_API_KEY secret",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 16,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 17,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Inventory installed skills",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:47Z"
+        },
+        {
+          "name": "Upload info artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-29T02:34:47Z",
+          "completed_at": "2026-10-29T02:34:48Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 22,
+          "started_at": "2026-10-29T02:34:48Z",
+          "completed_at": "2026-10-29T02:34:48Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-10-29T02:34:48Z",
+          "completed_at": "2026-10-29T02:34:50Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46,
+          "started_at": "2026-10-29T02:34:50Z",
+          "completed_at": "2026-10-29T02:34:50Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47,
+          "started_at": "2026-10-29T02:34:50Z",
+          "completed_at": "2026-10-29T02:34:50Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228752595",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000000229,
+      "runner_name": "GitHub Actions 1000000229",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 16000000000
+    },
+    {
+      "id": 123228856538,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMg2g",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228856538",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228856538",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:53Z",
+      "completed_at": "2026-10-29T02:34:53Z",
+      "name": "agent",
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228856538",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 0
+    },
+    {
+      "id": 123228857508,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMkpA",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228857508",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228857508",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:53Z",
+      "completed_at": "2026-10-29T02:34:53Z",
+      "name": "safe_outputs",
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228857508",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 0
+    },
+    {
+      "id": 123228857513,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMkqQ",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228857513",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228857513",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:56Z",
+      "completed_at": "2026-10-29T02:35:16Z",
+      "name": "conclusion",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-29T02:34:58Z",
+          "completed_at": "2026-10-29T02:35:01Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-29T02:35:01Z",
+          "completed_at": "2026-10-29T02:35:05Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-29T02:35:05Z",
+          "completed_at": "2026-10-29T02:35:05Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-29T02:35:05Z",
+          "completed_at": "2026-10-29T02:35:05Z"
+        },
+        {
+          "name": "Warn if threat detection produced no verdict",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 5,
+          "started_at": "2026-10-29T02:35:05Z",
+          "completed_at": "2026-10-29T02:35:06Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-29T02:35:06Z",
+          "completed_at": "2026-10-29T02:35:06Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-29T02:35:06Z",
+          "completed_at": "2026-10-29T02:35:07Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-29T02:35:07Z",
+          "completed_at": "2026-10-29T02:35:07Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-29T02:35:07Z",
+          "completed_at": "2026-10-29T02:35:07Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-29T02:35:07Z",
+          "completed_at": "2026-10-29T02:35:07Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-29T02:35:07Z",
+          "completed_at": "2026-10-29T02:35:07Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-29T02:35:07Z",
+          "completed_at": "2026-10-29T02:35:10Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-29T02:35:10Z",
+          "completed_at": "2026-10-29T02:35:11Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-29T02:35:11Z",
+          "completed_at": "2026-10-29T02:35:11Z"
+        },
+        {
+          "name": "Generate usage activity summary and unified session",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-29T02:35:11Z",
+          "completed_at": "2026-10-29T02:35:12Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-29T02:35:12Z",
+          "completed_at": "2026-10-29T02:35:13Z"
+        },
+        {
+          "name": "Wait before retrying usage artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 17,
+          "started_at": "2026-10-29T02:35:13Z",
+          "completed_at": "2026-10-29T02:35:13Z"
+        },
+        {
+          "name": "Retry upload usage artifact",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-10-29T02:35:13Z",
+          "completed_at": "2026-10-29T02:35:13Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-10-29T02:35:13Z",
+          "completed_at": "2026-10-29T02:35:14Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-10-29T02:35:14Z",
+          "completed_at": "2026-10-29T02:35:14Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228857513",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1000000230,
+      "runner_name": "GitHub Actions 1000000230",
+      "runner_group_name": "GitHub Actions",
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 20000000000
+    },
+    {
+      "id": 123228857538,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMkwg",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228857538",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228857538",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:53Z",
+      "completed_at": "2026-10-29T02:34:53Z",
+      "name": "detection",
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228857538",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 0
+    },
+    {
+      "id": 123228857811,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMl0w",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228857811",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228857811",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:53Z",
+      "completed_at": "2026-10-29T02:34:53Z",
+      "name": "push_wiki",
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228857811",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 0
+    },
+    {
+      "id": 123228857871,
+      "run_id": 40807162283,
+      "run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/runs/40807162283",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOLzaAQs8AAAAcsQMmDw",
+      "head_sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+      "url": "https://api.github.com/repos/GH-user-001/GH-user-001/actions/jobs/123228857871",
+      "html_url": "https://github.com/GH-user-001/GH-user-001/actions/runs/40807162283/job/123228857871",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-10-29T02:34:53Z",
+      "started_at": "2026-10-29T02:34:53Z",
+      "completed_at": "2026-10-29T02:34:53Z",
+      "name": "push_repo_memory",
+      "check_run_url": "https://api.github.com/repos/GH-user-001/GH-user-001/check-runs/123228857871",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "workflow_name": "Agentic Wiki Writer",
+      "head_branch": "add-wiki-writer",
+      "Duration": 0
+    }
+  ],
+  "artifacts_list": [
+    ".downloaded-artifacts/info",
+    ".downloaded-artifacts/usage",
+    "aw_info.json",
+    "usage/activity/summary.json",
+    "usage/aw_session.jsonl",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl",
+    "usage/graders/grader_manifest.json",
+    "usage/graders/grader_results.json"
+  ]
+}

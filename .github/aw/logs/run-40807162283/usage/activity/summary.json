@@ -1,0 +1,111 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "memory_saves": [
+    {
+      "memoryId": "default",
+      "jobResult": "skipped",
+      "status": "skipped"
+    }
+  ],
+  "working_set": {
+    "measurement_state": "unavailable",
+    "cumulative_input_tokens": 0,
+    "peak_input_tokens": 0,
+    "rebuild_excess_tokens": 0,
+    "invocations": 0
+  },
+  "friction": {
+    "measurement_state": "unavailable",
+    "canonical_unit": "aic",
+    "sources": [],
+    "total_events": 0,
+    "total_occurrences": 0,
+    "counted_occurrences": 0,
+    "suppressed_occurrences": 0,
+    "linked_invocations": 0,
+    "unattributed_occurrences": 0,
+    "cost": {
+      "aic": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "reasoning": 0,
+        "total": 0
+      },
+      "turns": 0,
+      "tool_calls": 0,
+      "latency_ms": 0
+    },
+    "dimension_states": {
+      "aic": "unavailable",
+      "tokens": "unavailable",
+      "turns": "unavailable",
+      "tool_calls": "unavailable",
+      "latency_ms": "unavailable"
+    },
+    "uncertainty": {
+      "aic": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "sample_size": 0,
+        "basis": "AI credits of errored invocations (measured), of linked follow-up invocations (causal), or the mean healthy-invocation cost (statistical)"
+      },
+      "tokens": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "sample_size": 0,
+        "basis": "token classes of the attributed invocations"
+      },
+      "turns": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "sample_size": 0,
+        "basis": "one additional turn per errored or retried model invocation"
+      },
+      "tool_calls": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "sample_size": 0,
+        "basis": "counted friction occurrences that consumed a tool call"
+      },
+      "latency_ms": {
+        "state": "unavailable",
+        "method": "none",
+        "confidence": "none",
+        "sample_size": 0,
+        "basis": "wall-clock duration recorded on the failing tool call or invocation"
+      }
+    },
+    "drivers": [],
+    "groups": [],
+    "events": [],
+    "unmeasured_drivers": [
+      {
+        "driver": "agent_api_error",
+        "reason": "source_unavailable:agent_token_usage"
+      },
+      {
+        "driver": "firewall_block",
+        "reason": "source_unavailable:firewall"
+      },
+      {
+        "driver": "integrity_filter",
+        "reason": "source_unavailable:mcp_gateway"
+      },
+      {
+        "driver": "mcp_tool_error",
+        "reason": "source_unavailable:mcp_gateway"
+      },
+      {
+        "driver": "session_tool_failure",
+        "reason": "source_unavailable:agent_session"
+      }
+    ]
+  }
+}

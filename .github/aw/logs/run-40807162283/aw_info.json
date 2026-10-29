@@ -1,0 +1,52 @@
+{
+  "engine_id": "claude",
+  "engine_name": "Claude Code",
+  "model": "agent",
+  "version": "2.1.310",
+  "agent_version": "2.1.310",
+  "workflow_name": "Agentic Wiki Writer",
+  "workflow_id": "GH-user-001/GH-user-001/.github/workflows/agentic-wiki-writer.lock.yml@refs/heads/add-wiki-writer",
+  "workflow_call_id": "40807162283-1:GH-user-001/GH-user-001/.github/workflows/agentic-wiki-writer.lock.yml@refs/heads/add-wiki-writer",
+  "caller_workflow_ref": "GH-user-001/GH-user-001/.github/workflows/agentic-wiki-writer.lock.yml@refs/heads/add-wiki-writer",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 40807162283,
+  "run_number": 1,
+  "run_attempt": "1",
+  "repository": "GH-user-001/GH-user-001",
+  "ref": "refs/heads/add-wiki-writer",
+  "sha": "25f7901b13c5c0b756d737a09661b987a72ec5eb",
+  "actor": "GH-user-001",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "dry_run": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.29.0",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-29T02:34:46.646Z",
+  "frontmatter_source": "githubnext/agentics/workflows/agentic-wiki-writer.md@139fa09ef17cde4135e696ff8e7af09bc5ddfa6e",
+  "body_modified": false,
+  "cli_version": "v1.0.1",
+  "workflow_ref": "GH-user-001/GH-user-001/.github/workflows/agentic-wiki-writer.lock.yml@refs/heads/add-wiki-writer",
+  "server_url": "https://github.com",
+  "model_config": {
+    "routing": {
+      "enabled": false
+    },
+    "models": {
+      "allowed": [],
+      "blocked": []
+    },
+    "max_ai_credits_source": "default",
+    "max_ai_credits": 1000
+  }
+}

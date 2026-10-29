@@ -134,7 +134,7 @@ safe-outputs:
 timeout-minutes: 30
 engine:
   id: gemini
-  model: gemini-2.5-pro
+  model: gemini-3.1-pro-preview
 
 source: githubnext/agentics/workflows/agentic-wiki-writer.md@139fa09ef17cde4135e696ff8e7af09bc5ddfa6e
 ---

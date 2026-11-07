@@ -6,7 +6,7 @@
 - Email: Rakeshkrishnan01@gmail.com
 - LinkedIn: https://www.linkedin.com/in/rakesh17684/
 - Website: https://rakeshkrishnan.com/
-- GitHub: https://github.com/GH-user-001
+- GitHub: https://github.com/r4kris
 - Medium: https://medium.com/@rakeshkrishnan01
 
 ## Summary
@@ -96,7 +96,7 @@ English (full professional), Tamil, Malayalam, Hindi; elementary French and Mand
 
 - **Little Voices:** a static web app where tapping a picture plays its name spoken by an ElevenLabs text-to-speech voice. Source: https://github.com/GH-user-001/Little-Voices
 - **Memory Snake** (May 2025): a web-based memorization game built on Snake mechanics.
-- **This website:** a static multi-page site deployed to GitHub Pages by GitHub Actions on every push to main, with CodeQL scanning. Source: https://github.com/GH-user-001/GH-user-001
+- **This website:** a static multi-page site deployed to GitHub Pages by GitHub Actions on every push to main, with CodeQL scanning. Source: https://github.com/r4kris/aboutme
 - ** Building AI Powered and Assited GitHub Organisation following End to End AI-DLC workflows
 
 ## Concepts & diagrams

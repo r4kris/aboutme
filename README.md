@@ -7,7 +7,7 @@
 Designing enterprise solutions with distributed teams across the world —
 legacy code transformation, DevSecOps transitions (on-prem & cloud), and AI-assisted developer tooling.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-2ea44f?style=flat-square&logo=githubpages&logoColor=white)](https://GH-user-001.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-2ea44f?style=flat-square&logo=githubpages&logoColor=white)](https://rakeshkrishnan.com/)
 [![Medium](https://img.shields.io/badge/Medium-Blog-12100E?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@rakeshkrishnan01)
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:Rakeshkrishnan01@gmail.com)
 
@@ -51,11 +51,11 @@ legacy code transformation, DevSecOps transitions (on-prem & cloud), and AI-assi
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=GH-user-001&theme=merko&hide_border=false&include_all_commits=true&count_private=true)
+![](https://github-readme-stats.vercel.app/api?username=r4kris&theme=merko&hide_border=false&include_all_commits=true&count_private=true)
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=GH-user-001&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=r4kris&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-![](https://github-contributor-stats.vercel.app/api?username=GH-user-001&limit=5&theme=merko&combine_all_yearly_contributions=true)
+![](https://github-contributor-stats.vercel.app/api?username=r4kris&limit=5&theme=merko&combine_all_yearly_contributions=true)
 
 </div>
 
